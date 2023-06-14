@@ -19,6 +19,7 @@ jobs:
       - name: Set up environment variables
         env:
           MONGODB_CNN: ${{ secrets.MONGODB_CNN }}
+          PORT: ${{ secrets.PORT }}
           PRIVATEKEY: ${{ secrets.PRIVATEKEY }}
           SECRETORPRIVATEKEY: ${{ secrets.SECRETORPRIVATEKEY }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
@@ -26,6 +27,7 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
           echo "MONGODB_CNN=${MONGODB_CNN}" >> .env
+          echo "PORT=${PORT}" >> .env
           echo "PRIVATEKEY=${PRIVATEKEY}" >> .env
           echo "SECRETORPRIVATEKEY=${SECRETORPRIVATEKEY}" >> .env
           echo "CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}" >> .env
