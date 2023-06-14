@@ -1,0 +1,42 @@
+{
+  "name": "prettygirl-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabrera-evil/PrettyGirl-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cabrera-evil/PrettyGirl-API/issues"
+  },
+  "homepage": "https://github.com/cabrera-evil/PrettyGirl-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.32.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.2",
+    "hbs": "^4.2.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-js-decode": "^1.5.1",
+    "mongoose": "^6.6.5",
+    "morgan": "~1.9.1",
+    "uuid": "^9.0.0"
+  }
+}
