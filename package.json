@@ -1,42 +1,35 @@
 {
-  "name": "prettygirl-api",
+  "name": "prettygirl-backend",
   "version": "1.0.0",
-  "description": "",
+  "homepage": "https://prettygirl-api.cabrera-dev.com/api",
+  "description": "Express.js API",
+  "author": "cabrera-evil",
+  "private": false,
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cabrera-evil/PrettyGirl-API.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cabrera-evil/PrettyGirl-API/issues"
-  },
-  "homepage": "https://github.com/cabrera-evil/PrettyGirl-API#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.0.1"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "cloudinary": "^1.32.0",
-    "cookie-parser": "~1.4.4",
+    "cloudinary": "^1.39.0",
+    "cookie-parser": "~1.4.6",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "dotenv": "^16.0.3",
-    "express": "~4.16.1",
+    "debug": "~4.3.4",
+    "dotenv": "^16.3.1",
+    "express": "~4.18.2",
     "express-fileupload": "^1.4.0",
-    "express-validator": "^6.14.2",
+    "express-validator": "^7.0.1",
     "hbs": "^4.2.0",
-    "http-errors": "~1.6.3",
-    "jsonwebtoken": "^8.5.1",
-    "jwt-js-decode": "^1.5.1",
-    "mongoose": "^6.6.5",
-    "morgan": "~1.9.1",
+    "http-errors": "~2.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "jwt-js-decode": "^1.6.0",
+    "mongoose": "^7.4.1",
+    "morgan": "~1.10.0",
     "uuid": "^9.0.0"
   }
 }
