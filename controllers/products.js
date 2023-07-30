@@ -8,11 +8,10 @@ const productsGet = async (req, res = response) => {
 
     if (filters.limit) {
         const { limit, skip = 0 } = req.query;
-        const query = { status: true };
 
         const [total, products] = await Promise.all([
-            Product.countDocuments(query),
-            Product.find(query)
+            Product.countDocuments(),
+            Product.find()
                 .limit(Number(limit))
                 .skip(Number(skip))
                 .sort({ createdAt: -1 })

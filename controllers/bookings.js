@@ -3,11 +3,9 @@ const Booking = require("../models/booking");
 // Get all bookings
 const bookingGet = async (req, res) => {
     const { limit = 5, skip = 0 } = req.query;
-    const query = { status: true };
-
     const [total, booking] = await Promise.all([
-        Booking.countDocuments(query),
-        Booking.find(query)
+        Booking.countDocuments(),
+        Booking.find()
             .limit(Number(limit))
             .skip(Number(skip)),
     ]);

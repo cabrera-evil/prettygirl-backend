@@ -38,7 +38,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Paths
-app.use('/', indexRouter);
+app.use('/api', indexRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/bags', bagsRouter);
 app.use('/api/bookings', bookingRouter);

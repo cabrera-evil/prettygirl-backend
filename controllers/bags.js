@@ -4,11 +4,9 @@ const Product = require("../models/product");
 // Get all bags
 const bagGet = async (req, res) => {
     const { limit = 5, skip = 0 } = req.query;
-    const query = { status: true };
-
     const [total, bag] = await Promise.all([
-        Bag.countDocuments(query),
-        Bag.find(query)
+        Bag.countDocuments(),
+        Bag.find()
             .limit(Number(limit))
             .skip(Number(skip)),
     ]);
